@@ -12,8 +12,7 @@ def Solution(a, b, target):
         u = q.popleft()
         if ((u[0], u[1]) in m):
             continue
-        if ((u[0] > a or u[1] > b or
-            u[0] < 0 or u[1] < 0)):
+        if ((u[0] > a or u[1] > b or u[0] < 0 or u[1] < 0)):
             continue
         path.append([u[0], u[1]])
         m[(u[0], u[1])] = 1
